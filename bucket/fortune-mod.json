@@ -9,6 +9,9 @@
             "hash": "sha256:b721384ca6898fcefb624be603f572588e2461311148ba816479217b9e53107f"
         }
     },
+    "env_set": {
+        "FORTUNE_PATH": "$dir\\share\\games\\fortunes"
+    },
     "bin": [
         "bin\\fortune.exe",
         "bin\\strfile.exe",
