@@ -6,8 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/latipun7/fortune-mod-windows-builder/releases/download/fortune-mod-3.26.0/fortune-mod-3.26.0-windows-x64.zip",
-            "hash": "sha256:d231f3d9f9398dbe80003090b1d3044735c3b5a526a03e939ef09bade85f6802",
-            "extract_dir": "fortune-mod-3.26.0-windows-x64"
+            "hash": "sha256:d231f3d9f9398dbe80003090b1d3044735c3b5a526a03e939ef09bade85f6802"
         }
     },
     "bin": [
@@ -23,8 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/latipun7/fortune-mod-windows-builder/releases/download/fortune-mod-$version/fortune-mod-$version-windows-x64.zip",
-                "extract_dir": "fortune-mod-$version-windows-x64"
+                "url": "https://github.com/latipun7/fortune-mod-windows-builder/releases/download/fortune-mod-$version/fortune-mod-$version-windows-x64.zip"
             }
         }
     }
