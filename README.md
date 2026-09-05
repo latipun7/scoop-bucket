@@ -1,42 +1,40 @@
-# Scoop Bucket Template
+# 🪣 latipun7's Scoop Bucket
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Tests](https://github.com/latipun7/scoop-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/latipun7/scoop-bucket/actions/workflows/ci.yml)
+[![Excavator](https://github.com/latipun7/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/latipun7/scoop-bucket/actions/workflows/excavator.yml)
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+A personal [Scoop](https://scoop.sh) bucket — CLI tools, fun utilities, and a couple of my own projects.
 
-## How do I use this template?
+## 📦 Available Manifests
 
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Workflow permissions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Ensure `Read repository contents and packages permissions` is selected.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
+| App | Description |
+|-----|-------------|
+| [charasay](https://github.com/latipun7/charasay) | The future of cowsay! Colorful characters saying something. |
+| [fortune-mod](https://github.com/latipun7/fortune-mod-windows-builder) | Classic Unix fortune cookie program, pre-built for Windows. |
+| [lolcat](https://github.com/latipun7/lolcat-windows-builder) | Rainbow text output — high-performance C implementation. |
+| [rfortune](https://github.com/umpire274/rFortune) | Modern cross-platform fortune program, written in Rust. |
+| [bdo-housecraft](https://github.com/Thell/bdo-housecraft) | Best housing chain optimizer for Black Desert Online. |
 
-## How do I install these manifests?
+## 🚀 Quick Start
 
-After manifests have been committed and pushed, run the following:
+Add the bucket and install any app:
 
-```pwsh
-scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
-scoop install <bucketname>/<manifestname>
+```powershell
+scoop bucket add latipun7 https://github.com/latipun7/scoop-bucket
+scoop install latipun7/<app-name>
 ```
 
-## How do I contribute new manifests?
+Example:
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+```powershell
+scoop install latipun7/charasay
+scoop install latipun7/lolcat
+```
+
+## 🛠️ Contributing
+
+Want to add a new manifest? Read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md) and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) wiki page.
+
+## 📄 License
+
+Released into the public domain under the [Unlicense](LICENSE).
